@@ -583,6 +583,164 @@ a {
   color: #B3A369;
 }
 
+/* ---------- Website Graphic ---------- */
+
+.website-graphic {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 26px auto 0;
+  border-radius: 22px;
+  border: 1px solid #e9e2f1;
+  box-shadow: 0 14px 34px rgba(44, 30, 70, 0.08);
+}
+
+/* ---------- Word Wall ---------- */
+
+.word-wall {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.word-wall span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #5c3fa3;
+  border: 1px solid #d8c9ec;
+  border-radius: 999px;
+  padding: 11px 16px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  box-shadow: 0 8px 18px rgba(44, 30, 70, 0.07);
+}
+
+.word-wall span:nth-child(3n) {
+  background: #f3eefb;
+}
+
+.word-wall span:nth-child(4n) {
+  background: #eef7ff;
+}
+
+/* ---------- Website Award Winners ---------- */
+
+.award-list {
+  display: grid;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.award-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 10px 24px rgba(44, 30, 70, 0.06);
+  border-left: 6px solid #5c3fa3;
+}
+/* ---------- Website Award Winners ---------- */
+
+.award-list {
+  display: grid;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.award-item {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px 24px 22px;
+  box-shadow: 0 10px 24px rgba(44, 30, 70, 0.06);
+  border-left: 6px solid #5c3fa3;
+}
+
+.winner-tag {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #f3eefb;
+  color: #5c3fa3;
+  border: 1px solid #d8c9ec;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.award-category {
+  color: #5c3fa3;
+  font-size: 0.88rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.award-item h3 {
+  color: #34105f;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.award-item p {
+  color: #4c4558;
+  margin-bottom: 0;
+  max-width: 90%;
+}
+.award-item h3 {
+  color: #5c3fa3;
+  font-size: 0.95rem;
+  margin-top: 0;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.award-item h4 {
+  color: #34105f;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.award-item p {
+  margin-bottom: 0;
+  color: #4c4558;
+}
+
+/* ---------- Website Observation List ---------- */
+
+.observation-list {
+  display: grid;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.observation-item {
+  background: #ffffff;
+  border-left: 6px solid #5c3fa3;
+  border-radius: 18px;
+  padding: 20px 22px;
+  box-shadow: 0 10px 24px rgba(44, 30, 70, 0.06);
+}
+
+.observation-item h3 {
+  color: #34105f;
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.observation-item p {
+  margin-bottom: 0;
+}
+
 /* ---------- Mapbox Section ---------- */
 
 .map-section {
@@ -650,7 +808,7 @@ table {
 }
 
 th {
-  background: #34105f;
+  background: #5c3fa3;
   color: #ffffff;
   text-align: left;
   padding: 12px;
@@ -723,6 +881,10 @@ tr:nth-child(even) {
     padding: 28px;
   }
 
+  .award-item {
+    flex-direction: column;
+  }
+
   #map {
     height: 420px;
     min-height: 420px;
@@ -758,4 +920,62 @@ tr:nth-child(even) {
     width: 100%;
     text-align: center;
   }
+
+  .website-graphic {
+    border-radius: 16px;
+  }
+}
+/* ---------- Website Standout Section ---------- */
+/* ---------- Website Standout Section ---------- */
+
+.award-list {
+  display: grid;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.award-item {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 26px;
+  box-shadow: 0 10px 24px rgba(44, 30, 70, 0.06);
+  border-left: 7px solid #5c3fa3;
+}
+
+.award-ribbon {
+  display: inline-block;
+  background: #5c3fa3;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 999px;
+  box-shadow: 0 8px 18px rgba(92, 63, 163, 0.16);
+  margin-bottom: 14px;
+}
+
+.award-category {
+  color: #5c3fa3;
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.award-item h3 {
+  color: #34105f;
+  font-size: 1.45rem;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.award-item p {
+  color: #4c4558;
+  margin-bottom: 0;
+  max-width: 900px;
 }
