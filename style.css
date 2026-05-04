@@ -979,3 +979,49 @@ tr:nth-child(even) {
   margin-bottom: 0;
   max-width: 900px;
 }
+/* ---------- Methodology Process Steps ---------- */
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.process-step {
+  background: #ffffff;
+  border: 1px solid #e9e2f1;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 24px rgba(44, 30, 70, 0.06);
+}
+
+.process-step span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: #5c3fa3;
+  color: #ffffff;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.process-step h3 {
+  margin-top: 0;
+  color: #34105f;
+  font-size: 1rem;
+}
+
+.process-step p {
+  margin-bottom: 0;
+  font-size: 0.92rem;
+}
+
+@media (max-width: 900px) {
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+}

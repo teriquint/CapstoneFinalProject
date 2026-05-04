@@ -6,60 +6,274 @@
   <title>Methodology</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="site-header">
     <nav class="navbar">
       <a href="index.html" class="logo">Higher Ed Marketing</a>
       <ul class="nav-links">
-        <li><a href="index.html" class="">Home</a></li>
-        <li><a href="instagram.html" class="">Instagram</a></li>
-        <li><a href="linkedin.html" class="">LinkedIn</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="instagram.html">Instagram</a></li>
+        <li><a href="linkedin.html">LinkedIn</a></li>
         <li><a href="websites.html">Websites</a></li>
-        <li><a href="findings.html" class="">Findings</a></li>
+        <li><a href="findings.html">Findings</a></li>
         <li><a href="methodology.html" class="active">Methodology</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="page-hero">
-    <p class="eyebrow">Higher Ed Marketing Across Platforms</p>
-    <h1>Methodology</h1>
-    <p>This page explains how the data was collected, cleaned, coded, and analyzed. It also gives the project credibility by showing that the categories were applied consistently.</p>
+    <p class="eyebrow">Project Methodology</p>
+    <h1>How I Collected, Coded, and Compared the Data</h1>
+    <p>
+      This project used a mixed approach that combined social media data collection,
+      post-by-post coding, engagement analysis, ranking context, and qualitative website review.
+      The goal was to compare how universities and business schools present themselves across
+      Instagram, LinkedIn, and official business school websites.
+    </p>
   </section>
 
-  <div class="card-grid">
-    <div class="card">
-      <h3>Data Collection</h3>
-      <p>The project uses datasets from Instagram and LinkedIn for selected universities and business schools.</p>
+  <section class="content-section soft-ombre-box">
+    <p class="eyebrow">Process Overview</p>
+    <h2>Project workflow</h2>
+
+    <div class="process-steps">
+      <div class="process-step">
+        <span>1</span>
+        <h3>Collect posts</h3>
+        <p>
+          I gathered Instagram and LinkedIn posts from general university accounts and business
+          school accounts.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <span>2</span>
+        <h3>Create codebooks</h3>
+        <p>
+          I created codebooks and dropdown menus so posts could be categorized consistently.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <span>3</span>
+        <h3>Analyze themes</h3>
+        <p>
+          I used Google Colab to count themes, calculate percentages, and create charts.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <span>4</span>
+        <h3>Compare engagement</h3>
+        <p>
+          I compared average engagement by account type using likes plus comments.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <span>5</span>
+        <h3>Review websites</h3>
+        <p>
+          I reviewed business school websites for career, ROI, network, culture, academics,
+          practical experience, logistics, and flexibility.
+        </p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Codebook</h3>
-      <p>Posts and comments were coded into themes such as career outcomes, student life, prestige rankings, alumni success, academic quality, and employer connections.</p>
-    </div>
-    <div class="card">
-      <h3>Analysis Plan</h3>
-      <p>The coded data can be analyzed through counts, percentages, school comparisons, platform comparisons, and visualizations.</p>
-    </div>
-  </div>
+  </section>
 
   <section class="content-section">
-    <h2>Notes for this section</h2>
+    <p class="eyebrow">School Sample</p>
+    <h2>Which schools were included?</h2>
     <p>
-      This is a clean placeholder area where you can add your findings, charts, Tableau embeds,
-      screenshots, or written analysis. The layout is already centered and connected to the same
-      navigation and stylesheet as the homepage.
+      The project compared ten universities and their business schools. The schools were grouped
+      into three comparison categories: elite academic “unicorns,” massive public counterparts,
+      and direct peer rivals. This grouping helped organize the analysis around different types
+      of institutional identity and market position.
     </p>
+
+    <div class="school-pill-grid">
+      <span class="school-pill duke">Duke</span>
+      <span class="school-pill notre-dame">Notre Dame</span>
+      <span class="school-pill northwestern">Northwestern</span>
+      <span class="school-pill texas">UT Austin</span>
+      <span class="school-pill georgia">Georgia</span>
+      <span class="school-pill michigan">Michigan</span>
+      <span class="school-pill smu">SMU</span>
+      <span class="school-pill baylor">Baylor</span>
+      <span class="school-pill vanderbilt">Vanderbilt</span>
+      <span class="school-pill tcu">TCU</span>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <p class="eyebrow">Social Media Collection</p>
+    <h2>How I collected Instagram and LinkedIn data</h2>
+    <p>
+      I scraped Instagram and LinkedIn pages for the basic university accounts and the business
+      school accounts. The data covered approximately the past two years and produced about
+      200 posts for most programs. This gave me a consistent sample to compare how schools
+      communicate across different platforms and account types.
+    </p>
+
+    <p>
+      For Instagram, I compared general university accounts with business school Instagram accounts.
+      For LinkedIn, I reviewed both posts and audience comments. This helped me compare not only
+      what schools posted, but also how audiences responded in a professional platform space.
+    </p>
+  </section>
+
+  <section class="content-section soft-ombre-box">
+    <p class="eyebrow">Coding Process</p>
+    <h2>How I used the codebooks</h2>
+    <p>
+      For each dataset, I created a codebook to make the coding process more consistent.
+      The codebooks included theme categories and short definitions for how each category
+      should be used.
+    </p>
+
+    <p>
+      I also added dropdown menus in the spreadsheets so each post could be categorized using
+      the same set of choices instead of typing categories manually each time. This helped reduce
+      spelling differences and made the coded data easier to analyze later in Google Colab.
+    </p>
+
+    <p>
+      Each post was coded into a primary theme and, when needed, a secondary theme. The theme
+      categories included career outcomes, prestige and rankings, student life, community and
+      belonging, academic quality, alumni success, employer connections, leadership, experiential
+      learning, admissions, and return on investment.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <p class="eyebrow">Theme Analysis</p>
+    <h2>How I analyzed the coded posts</h2>
+    <p>
+      After the posts were coded, I used Google Colab to count how often each theme appeared
+      in the different datasets. I also calculated percentages because the datasets did not all
+      have exactly the same number of rows. Percentages made the platform comparisons more fair
+      than only using raw counts.
+    </p>
+
+    <p>
+      I created charts for general Instagram themes, business school Instagram themes, LinkedIn
+      post themes, and LinkedIn comment themes. These charts helped show which messages were most
+      common on each platform and account type.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <p class="eyebrow">Engagement Analysis</p>
+    <h2>How I compared account structure and engagement</h2>
+    <p>
+      I also compared engagement for different types of business school Instagram accounts. Some
+      schools used a broader School of Business account, while others used a dedicated MBA or
+      graduate programs account.
+    </p>
+
+    <p>
+      To compare these account types, I created a total engagement measure by adding likes and
+      comments together. Then I calculated the average total engagement per post for each account
+      type. This helped me examine whether broader business school accounts or more targeted
+      graduate program accounts received stronger interaction in the sample.
+    </p>
+
     <div class="highlight-box">
       <p>
-        Tip: Use percentages instead of only raw counts when comparing platforms because the datasets
-        do not all have the same number of rows.
+        Total engagement was calculated as likes plus comments. This is a simple measure, but it
+        allowed me to compare average interaction across posts.
       </p>
     </div>
   </section>
 
+  <section class="content-section">
+    <p class="eyebrow">Ranking Sources</p>
+    <h2>Where the ranking information came from</h2>
+    <p>
+      I included business school ranking information to provide context for the schools in the sample.
+      The rankings were pulled from U.S. News &amp; World Report and Poets&amp;Quants. These rankings
+      were not the main focus of the project, but they helped show how each business school is positioned
+      in the larger MBA market.
+    </p>
+
+    <p>
+      I used the rankings as background information on the homepage school profile cards. I also planned
+      to compare ranking context with Instagram engagement as an exploratory analysis to see whether
+      higher-ranked schools automatically received stronger interaction.
+    </p>
+  </section>
+
+  <section class="content-section soft-ombre-box">
+    <p class="eyebrow">Website Review</p>
+    <h2>How I evaluated the business school websites</h2>
+    <p>
+      I reviewed each business school website as a separate part of the project. Unlike Instagram and
+      LinkedIn, the websites were not treated as a feed of posts. Instead, I evaluated them as official
+      marketing spaces.
+    </p>
+
+    <p>
+      I looked at each business school website from the perspective of a prospective MBA student.
+      I paid attention to what information was easy to find, what message the school emphasized most,
+      and whether the site made the program feel valuable, welcoming, flexible, and career-focused.
+    </p>
+
+    <p>
+      The website review focused on the things I find important in an MBA program: career outcomes,
+      return on investment, network, culture, academic quality, practical experience, logistics,
+      flexibility, and the overall feeling of whether I could imagine being successful there.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <p class="eyebrow">Tools Used</p>
+    <h2>What tools supported the project?</h2>
+    <p>
+      The project used spreadsheets for data organization and coding, dropdown menus for consistent
+      theme selection, Google Colab for analysis, and HTML/CSS for the final website. The website
+      was built as a public-facing capstone project to present the data, charts, map, website review,
+      and final findings.
+    </p>
+  </section>
+
+  <section class="content-section">
+    <p class="eyebrow">Limitations</p>
+    <h2>What this project does not claim</h2>
+    <p>
+      This project is based on a sample of selected universities and business schools, so the findings
+      are not meant to represent all higher education marketing. The data reflects the accounts and
+      posts included in the sample, not every possible communication channel used by each school.
+    </p>
+
+    <p>
+      Engagement was measured using likes and comments, which gives a useful comparison but does not
+      capture every type of audience behavior. Follower counts were not used to calculate engagement
+      rate, so the engagement analysis compares average interaction per post rather than engagement
+      as a percentage of audience size.
+    </p>
+
+    <p>
+      The website review also includes personal judgment because it evaluates design, navigation,
+      and the feeling of whether a program appears valuable or supportive. Because of that, the website
+      analysis should be understood as a qualitative comparison rather than a formal ranking system.
+    </p>
+  </section>
+
+  <section class="content-section soft-ombre-box">
+    <p class="eyebrow">Methodology Takeaway</p>
+    <h2>The project combines coded data with digital experience analysis.</h2>
+    <p>
+      The social media analysis helped show what schools posted and how audiences engaged with those
+      posts. The website review added a different layer by looking at how official business school
+      websites present value, opportunity, and student experience. Together, these methods helped
+      compare higher education marketing across platforms, account structures, and digital spaces.
+    </p>
+  </section>
+
   <footer class="site-footer">
     <p>Higher Ed Marketing Across Platforms</p>
-    <p>Capstone Project</p>
+    <p>Teri Quintana: DCDA 40833 Capstone Project</p>
   </footer>
 </body>
 </html>
