@@ -288,8 +288,10 @@ a {
 .school-pill-grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 12px;
-  margin-top: 24px;
+  margin: 24px auto 0;
+  max-width: 850px;
 }
 
 .school-pill {
@@ -392,10 +394,10 @@ a {
   padding-top: 28px;
   border-top: 1px solid #e9e2f1;
 }
-
 .school-group-block:first-of-type {
   border-top: none;
-  padding-top: 12px;
+  padding-top: 0;
+  margin-top: 12px;
 }
 
 .school-group-block > h3 {
@@ -1024,4 +1026,7 @@ tr:nth-child(even) {
   .process-steps {
     grid-template-columns: 1fr;
   }
+}
+.chart-spacing {
+  margin-bottom: 40px;
 }
