@@ -1819,3 +1819,37 @@ body {
   justify-self: center;
   width: calc(50% - 10px);
 }
+.methodology-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 28px;
+}
+
+.methodology-hero-text {
+  min-width: 0;
+}
+
+.methodology-hero-graphic {
+  width: 100%;
+  max-width: 300px;
+  justify-self: center;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .methodology-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .methodology-hero-graphic {
+    max-width: 260px;
+  }
+}
+.sources-books-graphic {
+  display: block;
+  width: 100%;
+  max-width: 850px;
+  margin: 28px auto 0;
+  border-radius: 18px;
+}
