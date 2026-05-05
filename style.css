@@ -1846,10 +1846,285 @@ body {
     max-width: 260px;
   }
 }
-.sources-books-graphic {
-  display: block;
+.sources-hero {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.sources-hero-image {
   width: 100%;
-  max-width: 850px;
-  margin: 28px auto 0;
-  border-radius: 18px;
+  max-width: 760px;
+  display: block;
+  margin: 34px 0 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.page-hero.sources-hero {
+  text-align: left;
+}
+
+.page-hero.sources-hero .sources-hero-image {
+  width: 100%;
+  max-width: 760px;
+  display: block;
+  margin: 34px 0 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.works-cited-page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 44px 24px 75px;
+}
+
+.source-panel {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(91, 44, 131, 0.14);
+  border-radius: 28px;
+  padding: 34px;
+  margin-bottom: 42px;
+  box-shadow: 0 18px 42px rgba(43, 18, 76, 0.10);
+}
+
+.source-panel-soft {
+  background: linear-gradient(135deg, rgba(245, 237, 255, 0.95), rgba(255, 250, 243, 0.98));
+}
+
+.source-panel h2 {
+  color: #4b1f73;
+  margin-top: 0;
+}
+
+.works-section {
+  margin-bottom: 42px;
+}
+
+.works-section:last-child {
+  margin-bottom: 0;
+}
+
+.works-list {
+  margin-top: 24px;
+}
+
+.works-entry {
+  padding-left: 42px;
+  text-indent: -42px;
+  margin-bottom: 18px;
+  line-height: 1.65;
+}
+
+.works-entry a {
+  color: #4b1f73;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.plain-list {
+  margin-top: 18px;
+  padding-left: 24px;
+  line-height: 1.65;
+}
+
+.plain-list li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .source-panel {
+    padding: 24px;
+    border-radius: 22px;
+  }
+
+  .works-entry {
+    padding-left: 28px;
+    text-indent: -28px;
+  }
+}
+/* Works Cited page cleanup */
+
+.page-hero.sources-hero {
+  text-align: left;
+  background: #ffffff;
+}
+
+.page-hero.sources-hero .sources-hero-image {
+  width: 100%;
+  max-width: 760px;
+  display: block;
+  margin: 34px 0 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.works-cited-page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 44px 24px 75px;
+}
+
+.source-panel {
+  background: #ffffff;
+  border: 1px solid #e9e2f1;
+  border-radius: 26px;
+  padding: 36px;
+  margin-bottom: 44px;
+  box-shadow: 0 12px 30px rgba(44, 30, 70, 0.07);
+}
+
+.source-panel-soft {
+  background: linear-gradient(135deg, #ffffff 0%, #fbf8ff 75%, #f7f3ff 100%);
+}
+
+.works-section {
+  margin-bottom: 46px;
+}
+
+.works-section:last-child {
+  margin-bottom: 0;
+}
+
+.works-section h2 {
+  color: #34105f;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.works-section p {
+  line-height: 1.65;
+}
+
+.works-list {
+  margin-top: 22px;
+}
+
+.works-entry {
+  padding-left: 42px;
+  text-indent: -42px;
+  margin-bottom: 18px;
+  line-height: 1.65;
+}
+
+.works-entry a {
+  color: #5c3fa3;
+  font-weight: 700;
+  word-break: break-word;
+  text-decoration: none;
+}
+
+.works-entry a:hover {
+  text-decoration: underline;
+}
+
+.plain-list {
+  margin-top: 18px;
+  padding-left: 24px;
+  line-height: 1.65;
+}
+
+.plain-list li {
+  margin-bottom: 10px;
+}
+
+.section-divider {
+  height: 1px;
+  background: #e9e2f1;
+  margin: 38px 0;
+}
+
+@media (max-width: 800px) {
+  .works-cited-page {
+    padding: 34px 18px 65px;
+  }
+
+  .source-panel {
+    padding: 24px;
+    border-radius: 22px;
+  }
+
+  .works-entry {
+    padding-left: 28px;
+    text-indent: -28px;
+  }
+
+  .page-hero.sources-hero .sources-hero-image {
+    max-width: 100%;
+  }
+}
+/* Soften the main APA sources box */
+.source-panel:not(.source-panel-soft) {
+  background: linear-gradient(135deg, #ffffff 0%, #fbf8ff 68%, #f1ecfb 100%);
+  border: 1px solid #e4d8f2;
+}
+/* Purple glow for the first Works Cited box */
+.source-panel-soft {
+  background: linear-gradient(135deg, #ffffff 0%, #fbf8ff 70%, #f3ebff 100%);
+  border: 1px solid #e3d5f3;
+  box-shadow:
+    0 12px 30px rgba(76, 31, 115, 0.08),
+    0 0 0 1px rgba(124, 77, 255, 0.05),
+    0 0 28px rgba(124, 77, 255, 0.14);
+}
+/* Stronger purple glow for the first Works Cited box */
+.source-panel-soft {
+  background: linear-gradient(135deg, #ffffff 0%, #fbf8ff 68%, #f1e8ff 100%);
+  border: 1px solid #dccaf5;
+  box-shadow:
+    0 14px 34px rgba(76, 31, 115, 0.10),
+    0 0 36px rgba(124, 77, 255, 0.18);
+}
+/* Softer Works Cited top box without touching the image */
+.page-hero.sources-hero {
+  background: linear-gradient(135deg, #ffffff 0%, #fbf8ff 55%, #f1e8ff 100%);
+  border: 1px solid #e1d2f2;
+  box-shadow:
+    0 16px 38px rgba(44, 30, 70, 0.10),
+    0 0 28px rgba(92, 63, 163, 0.10);
+}
+
+/* Keep the image natural and unboxed */
+.page-hero.sources-hero .sources-hero-image {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+}
+/* Balance school pills into two even rows */
+.school-pill-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  max-width: 900px;
+  width: min(100%, 900px);
+  margin: 24px auto 0;
+  justify-items: center;
+}
+
+.school-pill {
+  width: 100%;
+  max-width: 160px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+  .school-pill-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 500px;
+  }
+}
+
+/* Phone */
+@media (max-width: 520px) {
+  .school-pill-grid {
+    grid-template-columns: 1fr;
+    max-width: 280px;
+  }
+
+  .school-pill {
+    max-width: 100%;
+  }
 }
