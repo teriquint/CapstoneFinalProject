@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Higher Ed Marketing Capstone</title>
+  <title>Higher Ed Marketing Across Platforms</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.css" rel="stylesheet">
-  <script src="https://api.mapbox.com/mapbox-gl-js/v3.5.1/mapbox-gl.js"></script>
+
+  <!-- Mapbox -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css" rel="stylesheet">
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>
 </head>
 
 <body>
@@ -14,106 +16,132 @@
     <nav class="navbar">
       <a href="index.html" class="logo">Higher Ed Marketing</a>
       <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="methodology.html">Methodology</a></li>
-      <li><a href="instagram.html">Instagram</a></li>
-      <li><a href="linkedin.html">LinkedIn</a></li>
-      <li><a href="websites.html">Websites</a></li>
-      <li><a href="findings.html">Findings</a></li>
-      <li><a href="sources.html">Sources</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="methodology.html">Methodology</a></li>
+        <li><a href="instagram.html">Instagram</a></li>
+        <li><a href="linkedin.html">LinkedIn</a></li>
+        <li><a href="websites.html">Websites</a></li>
+        <li><a href="findings.html">Findings</a></li>
+        <li><a href="sources.html">Sources</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero-ombre">
     <div class="hero-ombre-content">
-      <p class="eyebrow">Higher Ed Marketing Across Platforms</p>
-      <h1>How Universities Shape Their Story Online</h1>
-
+      <p class="eyebrow">DCDA 40833 Capstone Project</p>
+      <h1>How higher education programs market themselves across platforms</h1>
       <p class="hero-text">
-        This capstone looks at how universities and business schools show up online. I wanted
-        to see whether they tell the same story across Instagram, LinkedIn, and business school
-        websites, or if the message changes depending on where people find them.
+        This project compares how selected universities and business schools present themselves
+        across Instagram, LinkedIn, and official websites. I looked at what each platform seemed
+        to emphasize, how schools shaped their messaging, and how audiences responded.
       </p>
 
       <div class="hero-buttons">
+        <a href="methodology.html">View Methodology</a>
         <a href="instagram.html">Explore Instagram</a>
         <a href="linkedin.html">Explore LinkedIn</a>
         <a href="websites.html">Explore Websites</a>
-        <a href="findings.html">View Findings</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <h2>Project focus</h2>
+    <p>
+      I compared a selected group of universities and business schools to see how higher education
+      marketing changes across platforms. Instagram often shows personality and campus feeling.
+      LinkedIn highlights professional identity and audience response. Websites bring the full
+      program story together through outcomes, culture, academics, and value.
+    </p>
+
+    <div class="comparison-card-grid">
+      <div class="comparison-card">
+        <h3>Instagram</h3>
+        <p>
+          I looked at the themes schools used in Instagram posts, including student life,
+          career outcomes, school pride, campus culture, and other visual or personality-driven content.
+        </p>
+      </div>
+
+      <div class="comparison-card">
+        <h3>LinkedIn</h3>
+        <p>
+          I looked at LinkedIn posts and comments to compare what schools published with how
+          people responded to that content.
+        </p>
+      </div>
+
+      <div class="comparison-card">
+        <h3>Websites</h3>
+        <p>
+          I reviewed business school websites to see how programs presented value, career outcomes,
+          culture, flexibility, and fit.
+        </p>
       </div>
     </div>
   </section>
 
   <section class="content-section soft-ombre-box">
-    <p class="eyebrow">Research Question</p>
-    <h2>Do schools tell different stories across platforms?</h2>
+    <h2>Schools in the comparison</h2>
     <p>
-      This project looks at how universities and business schools tell their stories across
-      Instagram, LinkedIn, and business school websites. Instagram often shows school personality,
-      student life, and belonging. LinkedIn focuses more on professional success, rankings,
-      alumni, and career value. Business school websites give the official program information,
-      including curriculum, admissions, rankings, outcomes, and return on investment.
+      The schools in this sample were grouped into three comparison categories. This helped me look
+      at elite academic brands, large public institutions, and schools that felt closer to TCU’s
+      competitive environment.
     </p>
-  </section>
-
-  <section class="content-section">
-    <p class="eyebrow">Schools in the Sample</p>
-    <h2>Ten universities, ten different business school identities</h2>
-
-    <div class="school-pill-grid">
-      <span class="school-pill baylor">Baylor</span>
-      <span class="school-pill duke">Duke</span>
-      <span class="school-pill georgia">Georgia</span>
-      <span class="school-pill michigan">Michigan</span>
-      <span class="school-pill northwestern">Northwestern</span>
-      <span class="school-pill notre-dame">Notre Dame</span>
-      <span class="school-pill smu">SMU</span>
-      <span class="school-pill tcu">TCU</span>
-      <span class="school-pill texas">UT Austin</span>
-      <span class="school-pill vanderbilt">Vanderbilt</span>
-    </div>
-  </section>
-
-  <section class="content-section">
-    <p class="eyebrow">School Profiles</p>
-    <h2>How the schools are organized</h2>
 
     <div class="school-group-block">
       <h3>Elite Academic “Unicorns”</h3>
       <p>
-        These are nationally recognized private universities with strong academic reputations
-        and polished online identities.
+        These schools have strong national reputations and highly recognizable academic brands.
       </p>
 
       <div class="school-showcase-grid">
         <div class="school-showcase-card duke-card">
-          <h3>Duke University</h3>
+          <div class="school-card-logo-block">
+            <img class="school-card-logo-main" src="images/duke-logo.png" alt="Duke Fuqua logo">
+            <p class="logo-source">
+              Logo source:
+              <a href="https://fw-sites.fuqua.duke.edu/marketing/guidance-materials/" target="_blank">Duke Fuqua</a>
+            </p>
+          </div>
+
           <ul class="school-details">
-            <li>Fuqua School of Business</li>
-            <li>Durham, North Carolina</li>
-            <li>U.S. News 2026: #14</li>
-            <li>Poets &amp; Quants 2025-26: #15</li>
+            <li>Private university</li>
+            <li>Business school: Fuqua School of Business</li>
+            <li>Comparison group: Elite Academic “Unicorns”</li>
           </ul>
         </div>
 
         <div class="school-showcase-card notre-dame-card">
-          <h3>University of Notre Dame</h3>
+          <div class="school-card-logo-block">
+            <img class="school-card-logo-main" src="images/notre-dame-logo.png" alt="Notre Dame Mendoza logo">
+            <p class="logo-source">
+              Logo source:
+              <a href="https://mendoza.nd.edu/onmessage/" target="_blank">Notre Dame Mendoza</a>
+            </p>
+          </div>
+
           <ul class="school-details">
-            <li>Mendoza College of Business</li>
-            <li>Notre Dame, Indiana</li>
-            <li>U.S. News 2026: #34</li>
-            <li>Poets &amp; Quants 2025-26: #28</li>
+            <li>Private university</li>
+            <li>Business school: Mendoza College of Business</li>
+            <li>Comparison group: Elite Academic “Unicorns”</li>
           </ul>
         </div>
 
         <div class="school-showcase-card northwestern-card">
-          <h3>Northwestern University</h3>
+          <div class="school-card-logo-block">
+            <img class="school-card-logo-main" src="images/northwestern-logo.png" alt="Northwestern Kellogg logo">
+            <p class="logo-source">
+              Logo source:
+              <a href="https://www.kellogg.northwestern.edu/" target="_blank">Northwestern Kellogg</a>
+            </p>
+          </div>
+
           <ul class="school-details">
-            <li>Kellogg School of Management</li>
-            <li>Evanston, Illinois</li>
-            <li>U.S. News 2026: #4</li>
-            <li>Poets &amp; Quants 2025-26: #1</li>
+            <li>Private university</li>
+            <li>Business school: Kellogg School of Management</li>
+            <li>Comparison group: Elite Academic “Unicorns”</li>
           </ul>
         </div>
       </div>
@@ -122,38 +150,56 @@
     <div class="school-group-block">
       <h3>Massive Public Counterparts</h3>
       <p>
-        These are large public universities with big alumni networks, strong visibility,
-        major athletics, and well-known school brands.
+        These large public universities have big audiences, strong school identity, and major
+        institutional reach.
       </p>
 
       <div class="school-showcase-grid">
         <div class="school-showcase-card texas-card">
-          <h3>University of Texas at Austin</h3>
+          <div class="school-card-logo-block">
+            <img class="school-card-logo-main" src="images/texas-logo.png" alt="UT Austin McCombs logo">
+            <p class="logo-source">
+              Logo source:
+              <a href="https://cloud.wikis.utexas.edu/wiki/spaces/texasmccombscommunications/pages/45581086/Logos" target="_blank">Texas McCombs</a>
+            </p>
+          </div>
+
           <ul class="school-details">
-            <li>McCombs School of Business</li>
-            <li>Austin, Texas</li>
-            <li>U.S. News 2026: #18</li>
-            <li>Poets &amp; Quants 2025-26: #13</li>
+            <li>Public university</li>
+            <li>Business school: McCombs School of Business</li>
+            <li>Comparison group: Massive Public Counterparts</li>
           </ul>
         </div>
 
         <div class="school-showcase-card georgia-card">
-          <h3>University of Georgia</h3>
+          <div class="school-card-logo-block">
+            <img class="school-card-logo-main" src="images/georgia-logo.png" alt="Georgia Terry logo">
+            <p class="logo-source">
+              Logo source:
+              <a href="https://www.terry.uga.edu/" target="_blank">Georgia Terry</a>
+            </p>
+          </div>
+
           <ul class="school-details">
-            <li>Terry College of Business</li>
-            <li>Athens, Georgia</li>
-            <li>U.S. News 2026: #25</li>
-            <li>Poets &amp; Quants 2025-26: #29</li>
+            <li>Public university</li>
+            <li>Business school: Terry College of Business</li>
+            <li>Comparison group: Massive Public Counterparts</li>
           </ul>
         </div>
 
         <div class="school-showcase-card michigan-card">
-          <h3>University of Michigan</h3>
+          <div class="school-card-logo-block">
+            <img class="school-card-logo-main" src="images/michigan-logo.png" alt="Michigan Ross logo">
+            <p class="logo-source">
+              Logo source:
+              <a href="https://michiganross.umich.edu/" target="_blank">Michigan Ross</a>
+            </p>
+          </div>
+
           <ul class="school-details">
-            <li>Ross School of Business</li>
-            <li>Ann Arbor, Michigan</li>
-            <li>U.S. News 2026: #13</li>
-            <li>Poets &amp; Quants 2025-26: #9</li>
+            <li>Public university</li>
+            <li>Business school: Ross School of Business</li>
+            <li>Comparison group: Massive Public Counterparts</li>
           </ul>
         </div>
       </div>
@@ -162,47 +208,72 @@
     <div class="school-group-block">
       <h3>Direct Peer Rivals</h3>
       <p>
-        These schools are similar private university competitors to TCU.
+        These schools were included because they feel more directly connected to the competitive
+        space around TCU, regional comparison, and similar prospective student audiences.
       </p>
 
       <div class="school-showcase-grid">
         <div class="school-showcase-card smu-card">
-          <h3>Southern Methodist University</h3>
-          <ul class="school-details">
-            <li>Cox School of Business</li>
-            <li>Dallas, Texas</li>
-            <li>U.S. News 2026: #36</li>
-            <li>Poets &amp; Quants 2025-26: #42</li>
-          </ul>
-        </div>
+          <div class="school-card-logo-block">
+            <img class="school-card-logo-main" src="images/smu-logo.png" alt="SMU Cox logo">
+            <p class="logo-source">
+              Logo source:
+              <a href="https://www.smu.edu/cox" target="_blank">SMU Cox</a>
+            </p>
+          </div>
 
-        <div class="school-showcase-card baylor-card">
-          <h3>Baylor University</h3>
           <ul class="school-details">
-            <li>Hankamer School of Business</li>
-            <li>Waco, Texas</li>
-            <li>U.S. News 2026: #67</li>
-            <li>Poets &amp; Quants 2025-26: #57</li>
-          </ul>
-        </div>
-
-        <div class="school-showcase-card vanderbilt-card">
-          <h3>Vanderbilt University</h3>
-          <ul class="school-details">
-            <li>Owen Graduate School of Management</li>
-            <li>Nashville, Tennessee</li>
-            <li>U.S. News 2026: #16</li>
-            <li>Poets &amp; Quants 2025-26: #18</li>
+            <li>Private university</li>
+            <li>Business school: Cox School of Business</li>
+            <li>Comparison group: Direct Peer Rivals</li>
           </ul>
         </div>
 
         <div class="school-showcase-card tcu-card">
-          <h3>Texas Christian University</h3>
+          <div class="school-card-logo-block">
+            <img class="school-card-logo-main" src="images/tcu-logo.png" alt="TCU Neeley logo">
+            <p class="logo-source">
+              Logo source:
+              <a href="https://www.neeley.tcu.edu/" target="_blank">TCU Neeley</a>
+            </p>
+          </div>
+
           <ul class="school-details">
-            <li>Neeley School of Business</li>
-            <li>Fort Worth, Texas</li>
-            <li>U.S. News 2026: #60</li>
-            <li>Poets &amp; Quants 2025-26: #49</li>
+            <li>Private university</li>
+            <li>Business school: Neeley School of Business</li>
+            <li>Comparison group: Direct Peer Rivals</li>
+          </ul>
+        </div>
+
+        <div class="school-showcase-card baylor-card">
+          <div class="school-card-logo-block">
+            <img class="school-card-logo-main" src="images/baylor-logo.png" alt="Baylor Hankamer logo">
+            <p class="logo-source">
+              Logo source:
+              <a href="https://hankamer.baylor.edu/" target="_blank">Baylor Hankamer</a>
+            </p>
+          </div>
+
+          <ul class="school-details">
+            <li>Private university</li>
+            <li>Business school: Hankamer School of Business</li>
+            <li>Comparison group: Direct Peer Rivals</li>
+          </ul>
+        </div>
+
+        <div class="school-showcase-card vanderbilt-card">
+          <div class="school-card-logo-block">
+            <img class="school-card-logo-main" src="images/vanderbilt-logo.png" alt="Vanderbilt Owen logo">
+            <p class="logo-source">
+              Logo source:
+              <a href="https://business.vanderbilt.edu/" target="_blank">Vanderbilt Owen</a>
+            </p>
+          </div>
+
+          <ul class="school-details">
+            <li>Private university</li>
+            <li>Business school: Owen Graduate School of Management</li>
+            <li>Comparison group: Direct Peer Rivals</li>
           </ul>
         </div>
       </div>
@@ -210,23 +281,13 @@
   </section>
 
   <section class="map-section">
-    <h2>Schools in the Study</h2>
+    <h2>Where the schools are located</h2>
     <p>
-      The map shows the universities included in the sample: Baylor, Duke, Georgia, Michigan,
-      Northwestern, Notre Dame, SMU, TCU, UT Austin, and Vanderbilt.
+      This map shows the schools included in the comparison. It adds a geographic view of the sample
+      and helps show how the selected schools are spread across different regions.
     </p>
-    <div id="map"></div>
-  </section>
 
-  <section class="content-section soft-ombre-box">
-    <p class="eyebrow">Project Focus</p>
-    <h2>What I wanted to understand</h2>
-    <p>
-      I wanted to see how business schools present themselves online and whether the message
-      changes depending on where you find them. Instagram feels more visual and personal,
-      LinkedIn feels more professional, and websites are where schools give the full program
-      story. This project looks at how all three work together to shape a school’s online presence.
-    </p>
+    <div id="map"></div>
   </section>
 
   <footer class="site-footer">
@@ -234,6 +295,101 @@
     <p>Teri Quintana: DCDA 40833 Capstone Project</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    mapboxgl.accessToken = "pk.eyJ1IjoidGVyaXF1aW50IiwiYSI6ImNtbzlsbTg2MzAydWcycW9pOXNnaXF4Z2MifQ.GK89Mdx9htHuRHk9OGMjkw";
+    const map = new mapboxgl.Map({
+    container: "map",
+    style: "mapbox://styles/mapbox/light-v11",
+    center: [-92.5, 36.5],
+    zoom: 3.5
+  });
+  const schools = [
+    {
+      name: "Duke Fuqua",
+      city: "Durham, North Carolina",
+      group: "Elite Academic “Unicorns”",
+      coordinates: [-78.9382, 36.0014],
+      color: "#00539B"
+    },
+    {
+      name: "Notre Dame Mendoza",
+      city: "Notre Dame, Indiana",
+      group: "Elite Academic “Unicorns”",
+      coordinates: [-86.2389, 41.7056],
+      color: "#C99700"
+    },
+    {
+      name: "Northwestern Kellogg",
+      city: "Evanston, Illinois",
+      group: "Elite Academic “Unicorns”",
+      coordinates: [-87.6753, 42.0565],
+      color: "#4E2A84"
+    },
+    {
+      name: "UT Austin McCombs",
+      city: "Austin, Texas",
+      group: "Massive Public Counterparts",
+      coordinates: [-97.7431, 30.2849],
+      color: "#BF5700"
+    },
+    {
+      name: "Georgia Terry",
+      city: "Athens, Georgia",
+      group: "Massive Public Counterparts",
+      coordinates: [-83.3773, 33.9519],
+      color: "#BA0C2F"
+    },
+    {
+      name: "Michigan Ross",
+      city: "Ann Arbor, Michigan",
+      group: "Massive Public Counterparts",
+      coordinates: [-83.7382, 42.2780],
+      color: "#00274C"
+    },
+    {
+      name: "SMU Cox",
+      city: "Dallas, Texas",
+      group: "Direct Peer Rivals",
+      coordinates: [-96.7845, 32.8423],
+      color: "#CC0000"
+    },
+    {
+      name: "TCU Neeley",
+      city: "Fort Worth, Texas",
+      group: "Direct Peer Rivals",
+      coordinates: [-97.3625, 32.7095],
+      color: "#4D1979"
+    },
+    {
+      name: "Baylor Hankamer",
+      city: "Waco, Texas",
+      group: "Direct Peer Rivals",
+      coordinates: [-97.1143, 31.5493],
+      color: "#154734"
+    },
+    {
+      name: "Vanderbilt Owen",
+      city: "Nashville, Tennessee",
+      group: "Direct Peer Rivals",
+      coordinates: [-86.8027, 36.1447],
+      color: "#B3A369"
+    }
+  ];
+
+  schools.forEach((school) => {
+    const popup = new mapboxgl.Popup({ offset: 25 }).setHTML(`
+      <h3>${school.name}</h3>
+      <p>${school.city}</p>
+      <p>${school.group}</p>
+    `);
+
+    new mapboxgl.Marker({ color: school.color })
+      .setLngLat(school.coordinates)
+      .setPopup(popup)
+      .addTo(map);
+  });
+
+  map.addControl(new mapboxgl.NavigationControl());
+  </script>
 </body>
 </html>

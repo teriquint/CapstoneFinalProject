@@ -1388,6 +1388,7 @@ tr:nth-child(even) {
   margin-bottom: 18px;
   font-size: 1.35rem;
 }
+
 .website-bubble-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1417,23 +1418,6 @@ tr:nth-child(even) {
   box-shadow: 0 12px 24px rgba(92, 63, 163, 0.22);
 }
 
-@media (max-width: 850px) {
-  .website-bubble-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 520px) {
-  .website-bubble-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-website-bubble-grid span:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(92, 63, 163, 0.22);
-}
-transition: transform 0.2s ease, box-shadow 0.2s ease;
 /* Website awards with screenshots */
 
 .website-awards-grid {
@@ -1474,25 +1458,287 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
   box-shadow: 0 10px 24px rgba(44, 30, 70, 0.10);
 }
 
-.award-ribbon {
-  display: inline-block;
-  background: #5c3fa3;
-  color: #ffffff;
-  padding: 8px 14px;
-  border-radius: 999px;
-  font-weight: 800;
-  font-size: 0.9rem;
+.award-source {
+  margin-top: 16px;
+  margin-bottom: 0;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #4c4558;
+  background: #f3eefb;
+  border: 1px solid #d9ccef;
+  border-radius: 14px;
+  padding: 10px 12px;
 }
 
-.award-category {
-  color: #6b4bb3;
-  font-weight: 700;
-  margin-top: 12px;
-  margin-bottom: 4px;
+.award-source a {
+  color: #5c3fa3;
+  font-weight: 800;
+  text-decoration: none;
 }
+
+.award-source a:hover {
+  text-decoration: underline;
+}
+
+/* School logos as card headings */
+
+.school-card-logo-block {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.school-card-logo-main {
+  width: 100%;
+  max-width: 340px;
+  height: 190px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+/* Custom logo sizing by school */
+
+.duke-card .school-card-logo-main {
+  max-width: 210px;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+}
+
+
+.northwestern-card .school-card-logo-main {
+  max-width: 260px;
+  height: 145px;
+}
+
+.smu-card .school-card-logo-main {
+  max-width: 265px;
+  height: 155px;
+}
+
+.baylor-card .school-card-logo-main {
+  max-width: 260px;
+  height: 155px;
+}
+
+.texas-card .school-card-logo-main {
+  max-width: 350px;
+  max-height: 100px;
+  width: auto;
+  height: auto;
+}
+
+.vanderbilt-card .school-card-logo-main {
+  max-width: 360px;
+  max-height: 145px;
+  width: auto;
+  height: auto;
+}
+
+.logo-source {
+  margin: 4px 0 0;
+  font-size: 0.72rem;
+  line-height: 1.3;
+  color: #6b6076;
+  font-weight: 600;
+  text-align: center;
+}
+
+.logo-source a {
+  color: #5c3fa3;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.logo-source a:hover {
+  text-decoration: underline;
+}
+
+/* Single waffle cards */
+
+.single-waffle-card {
+  max-width: 760px;
+  margin: 32px auto 0;
+}
+
+.single-waffle-card p {
+  text-align: center;
+  color: #4c4558;
+  margin-bottom: 18px;
+}
+
+/* Mobile fixes for newer sections */
 
 @media (max-width: 900px) {
   .website-award-row {
     grid-template-columns: 1fr;
   }
+}
+
+@media (max-width: 850px) {
+  .website-bubble-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .school-card-logo-main {
+    max-width: 300px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 520px) {
+  .website-bubble-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .school-card-logo-main {
+    max-width: 260px;
+    height: 140px;
+  }
+}
+/* Polished school details block */
+
+.school-card-logo-block {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.school-card-logo-main {
+  margin: 0 auto 4px;
+}
+
+.content-section .school-details {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 18px 20px;
+  background: #fbf8ff;
+  border: 1px solid #eee6f7;
+  border-radius: 18px;
+}
+
+.content-section .school-details li {
+  color: #4c4558;
+  margin-bottom: 12px;
+  padding-left: 28px;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.content-section .school-details li:last-child {
+  margin-bottom: 0;
+}
+
+.content-section .school-details li::before {
+  content: "•";
+  position: absolute;
+  left: 6px;
+  top: 0;
+  font-size: 1.35rem;
+  font-weight: 900;
+  line-height: 1;
+}
+/* Make school card logo areas and bullet boxes line up evenly */
+
+.school-showcase-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.school-card-logo-block {
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.school-card-logo-main {
+  max-width: 340px;
+  max-height: 185px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.logo-source {
+  margin: 0;
+  font-size: 0.72rem;
+  line-height: 1.3;
+  color: #6b6076;
+  font-weight: 600;
+  text-align: center;
+}
+
+.content-section .school-details {
+  margin: 0 auto;
+  padding: 18px 20px;
+  max-width: 92%;
+  width: 100%;
+  background: #fbf8ff;
+  border: 1px solid #eee6f7;
+  border-radius: 18px;
+}
+
+.content-section .school-details li {
+  margin-bottom: 12px;
+  padding-left: 28px;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.content-section .school-details li:last-child {
+  margin-bottom: 0;
+}
+/* Bring back the soft purple-blue page hue */
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(204, 176, 238, 0.28), transparent 34%),
+    radial-gradient(circle at top right, rgba(133, 197, 246, 0.20), transparent 32%),
+    linear-gradient(180deg, #fbf8ff 0%, #f7f5fb 45%, #f4f0fa 100%);
+}
+
+.page-hero,
+.content-section,
+.map-section {
+  background: linear-gradient(135deg, #ffffff 0%, #fbf8ff 62%, #eef7ff 100%);
+}
+
+.card,
+.comparison-card,
+.school-showcase-card,
+.post-example-card,
+.waffle-chart-card,
+.website-award-row {
+  background: linear-gradient(135deg, #ffffff 0%, #fbf8ff 72%, #f1f7ff 100%);
+}
+
+.soft-ombre-box,
+.soft-ombre-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f7efff 55%, #eaf6ff 100%);
+}
+/* Softer glow on major page blocks */
+
+.page-hero,
+.content-section,
+.map-section,
+.hero-ombre {
+  box-shadow: 0 16px 38px rgba(44, 30, 70, 0.09);
+}
+
+.card,
+.comparison-card,
+.school-showcase-card,
+.post-example-card,
+.waffle-chart-card,
+.website-award-row {
+  box-shadow: 0 12px 28px rgba(44, 30, 70, 0.075);
 }
